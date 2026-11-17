@@ -1,0 +1,54 @@
+<!DOCTYPE <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="Nome_completo">Nome completo:</label>
+                <input type="text" id="Nome_completo" name="Nome_completo" placeholder="Digite seu nome completo">
+
+                <label for="dt_nascimento">Data de nascimento:</label>
+                <input type="date" id="dt_nascimento" name="dt_nascimento">
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-mail">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua Senha">
+
+                <label for="uf">Unidade federativa - UF</label>
+                <select name="uf" id="uf">
+                    <option value="" selected>Selecione uma UF</option>
+                    <option value="sp">SP</option>
+                    <option value="sc">SC</option>
+                    <option value="ma">MA</option>
+                    <option value="rj">RJ</option>
+                    <option value="rs">RS</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Gênero</legend>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Masculino" name="Gênero" value="M">
+                
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="Feminino" name="Gênero" value="F">
+            </fieldset>
+
+            <fieldset>
+                <legend>Cursos</legend>
+                <input type="checkbox" id="tecnico-i" name="cursos" value="Técnico de Informatica para Internet">
+
+                <label for="tecnico-i"> Técnico de Informatica para Internet</label>
+                <input type="text" id="tecnico-i" name="cursos" placeholder="Completo ou Cursando?">
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
